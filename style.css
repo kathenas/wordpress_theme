@@ -1302,7 +1302,6 @@ body.date-hidden.author-hidden .content-area .widget-magazine-posts .type-post .
 
 .widget_tag_cloud .tagcloud a,
 .entry-tags .meta-tags a {
-	display: inline-block;
 	float: left;
 	margin: 3px;
 	padding: 0.3em 0.8em;
