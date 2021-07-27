@@ -35,22 +35,18 @@ GNU General Public License for more details.
 
 Kathenas bundles the following third-party resources:
 
-1. Genericons Icon Font - http://genericons.com
-License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
-Copyright: 2015 Automattic, Inc., https://automattic.com/
-
-2. Underscores - http://underscores.me/
+1. Underscores - http://underscores.me/
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
 Copyright: 2012-2015 Automattic, Inc., https://automattic.com/
 
-3. normalize.css - http://necolas.github.io/normalize.css/
+2. normalize.css - http://necolas.github.io/normalize.css/
 License: Distributed under the terms of the MIT License (http://opensource.org/licenses/MIT)
 Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 
-4. FlexSlider - https://github.com/woothemes/FlexSlider
+3. FlexSlider - https://github.com/woothemes/FlexSlider
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
 Copyright: 2015 WooThemes, http://www.woothemes.com
 
-5. svgxuse - https://github.com/Keyamoon/svgxuse
+4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
