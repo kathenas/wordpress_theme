@@ -67,7 +67,7 @@ function kathenas_customize_register_blog_settings( $wp_customize ) {
 
 	// Add Blog Layout setting and control.
 	$wp_customize->add_setting( 'kathenas_theme_options[post_layout]', array(
-		'default'           => 'three-columns',
+		'default'           => 'one-column',
 		'type'              => 'option',
 		'transport'         => 'refresh',
 		'sanitize_callback' => 'kathenas_sanitize_select',
