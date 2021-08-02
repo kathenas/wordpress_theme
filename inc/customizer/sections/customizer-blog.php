@@ -88,7 +88,7 @@ function kathenas_customize_register_blog_settings( $wp_customize ) {
 
 	// Add Excerpt Length setting and control.
 	$wp_customize->add_setting( 'kathenas_theme_options[excerpt_length]', array(
-		'default'           => 20,
+		'default'           => 32,
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'absint',
