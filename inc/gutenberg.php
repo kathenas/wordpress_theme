@@ -13,9 +13,6 @@
  */
 function kathenas_gutenberg_support() {
 
-	// Add theme support for wide and full images.
-	#add_theme_support( 'align-wide' );
-
 	// Define block color palette.
 	$color_palette = apply_filters( 'kathenas_color_palette', array(
 		'primary_color'    => '#996600',
@@ -81,6 +78,17 @@ function kathenas_gutenberg_support() {
 			'color' => '#000000',
 		),
 	) ) );
+
+	// Check if block style functions are available.
+	if ( function_exists( 'register_block_style' ) ) {
+
+		// Register Widget Title Block style.
+		register_block_style( 'core/heading', array(
+			'name'         => 'widget-title',
+			'label'        => esc_html__( 'Widget Title', 'maxwell' ),
+			'style_handle' => 'maxwell-stylesheet',
+		) );
+	}
 }
 add_action( 'after_setup_theme', 'kathenas_gutenberg_support' );
 
@@ -91,28 +99,12 @@ add_action( 'after_setup_theme', 'kathenas_gutenberg_support' );
 function kathenas_block_editor_assets() {
 
 	// Enqueue Editor Styling.
-	wp_enqueue_style( 'kathenas-editor-styles', get_theme_file_uri( '/assets/css/gutenberg-styles.css' ), array(), '20210306', 'all' );
+	wp_enqueue_style( 'kathenas-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), '20210306', 'all' );
 
 	// Enqueue Page Template Switcher Editor plugin.
 	#wp_enqueue_script( 'kathenas-page-template-switcher', get_theme_file_uri( '/assets/js/page-template-switcher.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), '20210306' );
 }
 add_action( 'enqueue_block_editor_assets', 'kathenas_block_editor_assets' );
-
-
-/**
- * Remove inline styling in Gutenberg.
- *
- * @return array $editor_settings
- */
-function kathenas_block_editor_settings( $editor_settings ) {
-	// Remove editor styling.
-	if ( ! current_theme_supports( 'editor-styles' ) ) {
-		$editor_settings['styles'] = '';
-	}
-
-	return $editor_settings;
-}
-#add_filter( 'block_editor_settings', 'kathenas_block_editor_settings', 11 );
 
 
 /**
