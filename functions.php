@@ -158,7 +158,7 @@ function kathenas_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) && ! kathenas_is_amp() ) {
-		wp_enqueue_script( 'kathenas-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200822', true );
+		wp_enqueue_script( 'kathenas-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array(), '20211105', true );
 		$kathenas_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'kathenas' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'kathenas' ),

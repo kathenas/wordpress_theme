@@ -4,7 +4,7 @@ Theme URI: https://development.kathenas.org/internal/website/themes/kathenas/
 Contributors: Phil Wyett
 Tags: two-columns, blog, news, custom-background, custom-header, custom-menu, grid-layout, blog, entertainment, news, editor-style, block-styles, rtl-language-support, grid-layout, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 5.2
-Tested up to: 5.7
+Tested up to: 5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
