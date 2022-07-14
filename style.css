@@ -4,9 +4,9 @@ Theme URI: https://development.kathenas.org/internal/website/themes/kathenas/
 Author: Phil Wyett (kathenas)
 Author URI: https://kathenas.org
 Description: Kathenas is a minimalistic and elegant WordPress theme featuring an ultra clean magazine layout. With a beautiful typography, various post layouts and a gorgeous featured posts slideshow Kathenas truly helps you to stand out.
-Version: 2.3.6.1
+Version: 2.3.7.1
 Requires at least: 5.2
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 5.6
 AMP: true
 License: GNU General Public License v2 or later
@@ -1197,6 +1197,10 @@ textarea {
 	text-decoration: underline;
 }
 
+.entry-content > *:first-child {
+	margin-top: 1.5em;
+}
+
 .entry-content p:first-child {
 	margin-top: 0.5em;
 }
@@ -1882,6 +1886,25 @@ wp-block-pullquote p {
 }
 
 .wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Columns Block */
+div.wp-block-columns {
+	gap: 1.5em;
+}
+
+/* Column Block */
+.wp-block-column.has-background {
+	padding: 1.5em;
+	box-sizing: border-box;
+}
+
+.wp-block-column.has-background > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-column.has-background > *:last-child {
 	margin-bottom: 0;
 }
 
@@ -3361,12 +3384,13 @@ html[xmlns] .zeeflexslider .zeeslides {
 ## - Media Queries for Blocks
 --------------------------------------------------------------*/
 @media only screen and (min-width: 960px) {
-	.wp-block-group.has-background {
-		padding: 2em;
+	div.wp-block-columns {
+		gap: 2em;
 	}
 
-	wp-block-column:not(:first-child) {
-		margin-left: 2em;
+	.wp-block-group.has-background,
+	.wp-block-column.has-background {
+		padding: 2em;
 	}
 }
 
